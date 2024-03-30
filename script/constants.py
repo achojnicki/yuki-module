@@ -1,0 +1,1 @@
+system_message="Your role is to write a script for a YouTube Video. In the next message you will get a video topic."
