@@ -5,7 +5,7 @@ class Prompt:
 	def __init__(self):
 		pass
 	
-	def build(self, system_message, video_title, video_description, format_example):
+	def build(self, system_message, video_title, video_description, format_example, format_explaination):
 		msg=[]
 
 		msg.append(
@@ -35,5 +35,13 @@ class Prompt:
 				"content": format_example
 			}
 		)
+
+		msg.append(
+			{
+				"role": "user",
+				"content": format_explaination
+			}
+		)
+
 		
 		return msg

@@ -24,11 +24,8 @@ class Scene_Static:
 		self._background_image_clip=editor.ImageClip(self._root._background_image)
 
 		self._audio_clip=editor.AudioFileClip(self._audio).volumex(self._audio_volume)
-		self._audio_clip=self._audio_clip.subclip(0, self._audio_clip.duration-0.05)
+		self._audio_clip=self._audio_clip.subclip(0, self._audio_clip.duration-0.06)
 
-		
-		self._audio_clip=self._audio_clip.audio_fadein(0.01)
-		self._audio_clip=self._audio_clip.audio_fadeout(0.01)
 
 		self._image_clip=editor.ImageClip(
 			self._image
