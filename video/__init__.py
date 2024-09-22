@@ -1,4 +1,4 @@
-from yuki.video.scenes import Scene_Static, Scene_Zoom_In
+from yuki.video.scenes import Scene_Static, Scene_Zoom_In, Scene_Wobbling_Grow, Scene_Grow
 
 
 from moviepy import editor
@@ -10,7 +10,9 @@ class UnknownSceneType(Exception):
 class EP:
 	_scenes_types=[
 		Scene_Static,
-		Scene_Zoom_In
+		Scene_Zoom_In,
+		Scene_Wobbling_Grow,
+		Scene_Grow
 		]
 	def __init__(
 		self,
